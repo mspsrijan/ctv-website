@@ -18,6 +18,7 @@
 .hero h3 {
   margin-top: 10px;
   margin-bottom: 10px;
+  font-weight: 700;
 }
 
 .hero h1 {
@@ -81,7 +82,8 @@ div.about-content hr {
 
 .ticker p {
   text-align: center;
-  margin-bottom: -5px;
+  font-weight: 300;
+  margin-bottom: -8px;
   white-space: nowrap;
   overflow: hidden;
 }
@@ -102,25 +104,26 @@ div.about-content hr {
   .vertical-section {
     display: block;
     position: relative;
-    height: 850px;
-    width: 100px;
-    margin-top: 20px;
+    height: 950px;
+    width: 60px;
+    margin-top: 50px;
   }
 
   .vertical-line {
     position: absolute;
     top: 0;
-    left: 15%;
-    transform: translateX(-50%);
+    left: 50px;
+    transform: translateX(-50px);
     height: 100%;
     z-index: 1;
   }
 
   .rotated-text {
     font-style: italic;
+    font-weight: 200;
     position: absolute;
     top: 44%;
-    left: 5%;
+    left: 15%;
     transform: translateX(-50%) rotate(90deg);
     white-space: nowrap;
     z-index: 2;

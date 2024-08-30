@@ -1,0 +1,156 @@
+footer .footer-grid {
+  background-color: #404040;
+  padding: 30px 20px;
+  border-radius: 0 0 10px 10px;
+  display: grid;
+  grid-template-columns: 12fr;
+  gap: 50px;
+}
+
+footer .footer-slogan {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+footer .footer-grid * {
+  color: #fff;
+}
+
+footer .footer-grid h5 span {
+  padding-left: 50px;
+}
+
+footer .footer-grid h6 {
+  margin-top: 10px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-style: italic;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+footer ul li {
+  margin-left: 0;
+  text-align: center;
+}
+
+footer a {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+footer a:hover,
+footer a:active,
+footer a:focus {
+  text-decoration: underline;
+}
+
+footer .footer-social-lang {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+footer .social-icons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.social-icons a i {
+  width: 30px;
+  height: 30px;
+}
+
+.footer .language-selector a {
+  padding: 0 10px;
+}
+
+.footer .language-selector a:hover {
+  text-decoration: underline;
+}
+
+.footer-sponsor {
+  background-color: #fff;
+  padding: 50px 10px 30px 10px;
+}
+
+.footer-sponsor p {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.footer-sponsor div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.footer-sponsor div img {
+  max-width: calc(100% / 5 - 25px);
+  height: auto;
+}
+
+@media only screen and (min-width: 767px) {
+  footer .footer-grid {
+    border-radius: 0 0 20px 20px;
+  }
+
+  footer .footer-grid h5 span {
+    padding-left: 80px;
+  }
+
+  footer .footer-grid h6 {
+    font-size: 18px;
+  }
+
+  .footer-sponsor div img {
+    max-width: calc(100% / 9 - 25px);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  footer .footer-grid {
+    padding: 80px 50px;
+    grid-template-columns: 6fr 4fr 2fr;
+  }
+
+  footer .footer-slogan {
+    max-width: unset;
+    margin: unset;
+  }
+
+  footer ul li {
+    text-align: unset;
+  }
+
+  footer .footer-social-lang,
+  footer .social-icons {
+    justify-content: left;
+  }
+
+  footer .language-selector {
+    display: none;
+  }
+
+  .footer-sponsor div {
+    gap: 40px;
+    flex-wrap: nowrap;
+  }
+
+  .footer-sponsor div img {
+    max-width: calc(100% / 9 - 40px);
+  }
+}
