@@ -62,7 +62,7 @@ div.about-content img {
   width: 100%;
 }
 
-div.about-content div {
+div.about-content > div {
   display: flex;
   justify-content: stretch;
   align-items: end;
@@ -126,3 +126,56 @@ div.about-content hr {
     z-index: 2;
   }
 }
+
+/** Benefits section start**/
+.benefits .heading {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.benefits img {
+  max-height: 450px;
+  object-fit: cover;
+}
+
+.benefits .benefits-list {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+  gap: 50px;
+}
+
+.benefits-list div h5 {
+  display: none;
+}
+
+.benefits-list div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.benefits-list img {
+  width: 220px;
+}
+
+.benefits-list ul {
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .benefits .benefits-list {
+    flex-direction: row;
+  }
+
+  .benefits-list div h5 {
+    display: block;
+  }
+}
+/** Benefits section end**/
