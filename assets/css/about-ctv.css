@@ -154,7 +154,7 @@ div.about-content hr {
 }
 
 .benefits-list img {
-  width: 220px;
+  width: 160px;
 }
 
 .benefits-list ul {
@@ -171,5 +171,9 @@ div.about-content hr {
 
   .benefits-list div h5 {
     display: block;
+  }
+
+  .benefits-list img {
+    width: 220px;
   }
 }

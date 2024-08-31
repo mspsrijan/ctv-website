@@ -97,6 +97,10 @@ img {
   width: 100%;
 }
 
+button {
+  all: unset;
+}
+
 .white-text {
   color: #fff;
 }
