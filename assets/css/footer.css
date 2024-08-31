@@ -1,3 +1,8 @@
+.mobile-footer-logo {
+  width: 220px;
+  margin: 20px 0;
+}
+
 footer .footer-grid {
   background-color: #404040;
   padding: 30px 20px;
@@ -124,6 +129,10 @@ footer .social-icons {
 }
 
 @media only screen and (min-width: 1024px) {
+  .mobile-footer-logo {
+    display: none;
+  }
+
   footer .footer-grid {
     padding: 80px 50px;
     grid-template-columns: 6fr 4fr 2fr;

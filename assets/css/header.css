@@ -33,11 +33,11 @@ header .sponsor-inner-row {
 }
 
 header .thkpa-logo {
-  width: 63px;
+  width: 70px;
 }
 
 header .years-logo {
-  width: 17px;
+  width: 16px;
 }
 
 header .aptec-logo {
@@ -45,11 +45,11 @@ header .aptec-logo {
 }
 
 header .ccidahk-logo {
-  width: 35px;
+  width: 40px;
 }
 
 header .govt-logo {
-  width: 100px;
+  width: 105px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -83,7 +83,7 @@ header .govt-logo {
   }
 
   header .sponsor-row {
-    gap: 80px;
+    gap: 55px;
   }
 
   header .sponsor-row div {
@@ -93,28 +93,29 @@ header .govt-logo {
 
   header .thkpa-logo {
     width: auto;
-    max-width: 210px;
+    max-width: 205px;
   }
 
   header .years-logo {
     width: auto;
-    max-width: 40px;
+    max-width: 55px;
   }
 
   header .aptec-logo {
     width: auto;
     max-width: 115px;
     height: fit-content;
+    margin-top: 20px;
   }
 
   header .ccidahk-logo {
     width: auto;
-    max-width: 75px;
+    max-width: 102px;
   }
 
   header .govt-logo {
     width: auto;
-    max-width: 220px;
+    max-width: 315px;
   }
 }
 
@@ -125,6 +126,10 @@ header .govt-logo {
   header .sponsor-row > div {
     gap: 10px;
     flex-direction: column !important;
+  }
+
+  header .aptec-logo {
+    margin-top: 0;
   }
 }
 
