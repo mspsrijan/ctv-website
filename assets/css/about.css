@@ -25,11 +25,11 @@
   margin-top: 150px;
 }
 
-.hero-img img {
-  width: 100%;
+.hero-img {
+  padding-bottom: 0;
 }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 768px) {
   .hero {
     background-position: right top;
   }
@@ -59,10 +59,6 @@ div.about-content {
   width: 100%;
 }
 
-div.about-content img {
-  width: 100%;
-}
-
 div.about-content > div {
   display: flex;
   justify-content: stretch;
@@ -74,10 +70,6 @@ div.about-content > div {
 
 div.about-content hr {
   flex-grow: 1;
-}
-
-.ticker img {
-  width: 100%;
 }
 
 .ticker p {
@@ -130,7 +122,7 @@ div.about-content hr {
   }
 }
 
-/** Benefits section start**/
+/** Benefits section**/
 .benefits .heading {
   display: flex;
   gap: 20px;
@@ -181,4 +173,3 @@ div.about-content hr {
     display: block;
   }
 }
-/** Benefits section end**/

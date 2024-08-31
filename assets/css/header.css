@@ -52,7 +52,7 @@ header .govt-logo {
   width: 100px;
 }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 768px) {
   header p {
     font-size: 10px;
     margin-bottom: 5px;
@@ -188,10 +188,17 @@ nav.desktop-nav {
   }
 
   nav .menu-items a:hover,
+  nav .menu-items a:active,
+  nav .menu-items a:focus,
   nav .language-selector a:hover {
     color: #4e4e4e;
     text-decoration: underline;
     text-decoration-thickness: 2px;
+  }
+
+  .menu-items a.active {
+    color: #4e4e4e;
+    text-decoration: underline;
   }
 
   nav .language-selector {
@@ -265,7 +272,8 @@ nav.mobile-nav .menu-items a {
   text-decoration: none;
 }
 
-nav.mobile-nav .menu-items a:hover {
+nav.mobile-nav .menu-items a:hover,
+nav.mobile-nav .menu-items a.active {
   text-decoration: underline;
 }
 

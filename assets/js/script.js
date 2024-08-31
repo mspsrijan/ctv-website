@@ -16,8 +16,15 @@ document.getElementById("menu-overlay").addEventListener("click", function () {
 });
 
 // Language switcher
+// Language switcher
+
+// Basepath for Github subdirectory
+// const basePath = "/ctv-website";
+
+// Basepath for localhost
+const basePath = "";
+
 document.addEventListener("DOMContentLoaded", function () {
-  const basePath = "/ctv-website";
   const path = window.location.pathname.replace(basePath, "").split("/");
 
   // If the URL doesn't have a language code, redirect to the default language
@@ -27,10 +34,11 @@ document.addEventListener("DOMContentLoaded", function () {
       ""
     )}`;
   }
+
+  highlightActiveLink();
 });
 
 function switchLanguage(lang) {
-  const basePath = "/ctv-website";
   const path = window.location.pathname.replace(basePath, "").split("/");
   path[1] = lang;
   window.location.pathname = `${basePath}${path.join("/")}`;
@@ -43,7 +51,6 @@ document.addEventListener("click", function (event) {
     event.target.getAttribute("href").startsWith("/")
   ) {
     event.preventDefault(); // Prevent the default link behavior
-    const basePath = "/ctv-website";
     const path = window.location.pathname.replace(basePath, "").split("/");
     const currentLang = path[1];
     const href = event.target.getAttribute("href");
@@ -57,3 +64,17 @@ document.addEventListener("click", function (event) {
     window.location.href = event.target.getAttribute("href");
   }
 });
+
+// Highlight the active link in the navigation menu
+function highlightActiveLink() {
+  const path = window.location.pathname.replace(basePath, "").split("/");
+  const currentPage = path[2] || "index.html"; // Assuming index.html is the default home page
+  const links = document.querySelectorAll(".menu-items a");
+
+  links.forEach((link) => {
+    const linkPath = link.getAttribute("href").split("/").pop();
+    if (linkPath === currentPage) {
+      link.classList.add("active");
+    }
+  });
+}

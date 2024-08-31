@@ -1,0 +1,189 @@
+/** Hero **/
+section.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.hero .section-heading h1 span {
+  display: none;
+}
+
+.hero .section-heading h6 {
+  margin-top: 15px;
+}
+
+.hero .section-subheading h3 {
+  font-weight: 700;
+}
+
+.hero .section-subheading {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: right;
+}
+
+.hero-img {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.hero-img img {
+  max-height: 500px;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero .section-heading h1 {
+    font-size: 26px;
+  }
+
+  .hero .section-heading h6 {
+    font-size: 14px;
+  }
+  .hero .section-subheading h3 {
+    font-size: 20px;
+  }
+  .hero .section-subheading h6.subheading-sm {
+    font-size: 13px;
+  }
+  .hero .section-subheading p {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .hero .section-heading h1 span {
+    display: inline-block;
+  }
+}
+
+/** About section **/
+section.about {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+div.about-content {
+  width: 100%;
+}
+
+@media only screen and (min-width: 1024px) {
+  section.about {
+    flex-direction: row;
+  }
+
+  div.about-heading {
+    width: 45%;
+  }
+
+  div.about-content {
+    width: 55%;
+  }
+}
+
+/** Programme Objectives **/
+div.programme-objectives .objectives-banner {
+  height: 200px;
+  background: url("../img/programme-objectives-bg.jpeg") rgba(0, 0, 0, 0.2);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.programme-objectives .objectives-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.programme-objectives .objectives-banner * {
+  color: #fff;
+  font-weight: 700;
+}
+
+.programme-objectives .objectives-banner h6 {
+  text-align: right;
+}
+
+section.objectives {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+div.objectives {
+  width: 100%;
+}
+
+.objectives-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ticker p {
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: -8px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+  div.programme-objectives .objectives-banner {
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  div.programme-objectives .objectives-banner {
+    height: 350px;
+  }
+
+  .programme-objectives .objectives-banner h3 {
+    font-size: 72px;
+  }
+
+  .programme-objectives .objectives-banner h6 {
+    font-size: 42px;
+  }
+
+  section.objectives {
+    flex-direction: row;
+  }
+
+  div.objectives-heading {
+    width: 45%;
+  }
+
+  div.objectives-content {
+    width: 55%;
+  }
+}
+
+/** Organisations **/
+.organisations .heading {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.organisations .heading h5 {
+  text-align: right;
+  max-width: 250px;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .organisations .heading h5 {
+    font-size: 28px;
+  }
+}
