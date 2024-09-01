@@ -101,6 +101,10 @@ button {
   all: unset;
 }
 
+a {
+  text-decoration: none;
+}
+
 .white-text {
   color: #fff;
 }

@@ -129,7 +129,7 @@ div.about-content {
 /** Programme Objectives **/
 div.programme-objectives .objectives-banner {
   height: 200px;
-  background: url("../img/programme-objectives-bg.jpeg") rgba(0, 0, 0, 0.2);
+  background: url("../img/programme-objectives-bg.jpg") rgba(0, 0, 0, 0.2);
   background-blend-mode: multiply;
   background-position: center;
   background-size: cover;
@@ -302,7 +302,7 @@ div.objectives {
 /** CTV Pilot Sceme **/
 div.pilot-scheme .pilot-scheme-banner {
   height: 200px;
-  background: url("../img/programme-objectives-bg.jpeg") rgba(0, 0, 0, 0.2);
+  background: url("../img/programme-objectives-bg.jpg") rgba(0, 0, 0, 0.2);
   background-blend-mode: multiply;
   background-position: center;
   background-size: cover;
@@ -374,7 +374,7 @@ div.pilot-scheme-item {
 /** Dataset Poduction **/
 div.dataset-production .dataset-production-banner {
   height: 200px;
-  background: url("../img/dataset-production-bg.jpeg") rgba(0, 0, 0, 0.2);
+  background: url("../img/dataset-production-bg.jpg") rgba(0, 0, 0, 0.2);
   background-blend-mode: multiply;
   background-position: center;
   background-size: cover;
