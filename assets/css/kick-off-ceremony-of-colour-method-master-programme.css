@@ -1,0 +1,88 @@
+/** Hero **/
+.hero .cmm-kickoff-event-date {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.hero .cmm-kickoff-event-title {
+  line-height: 1.1em;
+}
+
+@media only screen and (min-width: 1024px) {
+  .hero .cmm-kickoff-event-date {
+    font-size: 15px;
+  }
+}
+
+/** CMM Kickoff Event **/
+.cmm-kickoff {
+  background-color: #fff;
+  margin: 0px 15px 25px 15px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.cmm-kickoff-event-img {
+  min-height: 180px;
+  object-fit: cover;
+}
+
+.cmm-kickoff-event-details {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .cmm-kickoff {
+    margin: 0 30px 30px 30px;
+    padding: 20px;
+    border-radius: 20px;
+    gap: 30px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cmm-kickoff {
+    margin: 0 50px 50px 50px;
+    padding: 30px;
+  }
+
+  .cmm-kickoff-event-details {
+    width: 60%;
+    margin-top: 50px;
+    margin-left: auto;
+  }
+}
+
+/** Page footer **/
+.page-footer {
+  padding-top: 0;
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.page-footer img {
+  width: 160px;
+}
+
+.page-footer button a {
+  text-decoration: none;
+}
+
+.page-footer button:hover a {
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 1024px) {
+  .page-footer {
+    margin-top: -60px;
+  }
+
+  .page-footer img {
+    width: 220px;
+  }
+}
