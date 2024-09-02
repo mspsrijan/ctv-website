@@ -33,23 +33,28 @@ header .sponsor-inner-row {
 }
 
 header .thkpa-logo {
-  width: 70px;
+  min-width: 60px;
+  max-width: 84px;
 }
 
 header .years-logo {
-  width: 16px;
+  min-width: 17px;
+  max-width: 24px;
 }
 
 header .aptec-logo {
-  width: 40px;
+  min-width: 36px;
+  max-width: 50px;
 }
 
 header .ccidahk-logo {
-  width: 40px;
+  min-width: 31px;
+  max-width: 40px;
 }
 
 header .govt-logo {
-  width: 105px;
+  min-width: 96px;
+  max-width: 135px;
 }
 
 @media only screen and (min-width: 768px) {
