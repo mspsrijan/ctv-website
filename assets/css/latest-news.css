@@ -18,7 +18,7 @@ section.hero {
 }
 
 .hero .section-heading h1 {
-  font-size: 26px;
+  font-size: 36px;
 }
 
 .hero .section-heading h1 span {
@@ -33,6 +33,7 @@ section.hero {
 .hero .section-subheading h3 {
   font-weight: 700;
   font-size: 20px;
+  text-transform: uppercase;
 }
 
 .hero .section-subheading {
@@ -101,7 +102,8 @@ section.hero {
 .cmm-kickoff .cmm-kickoff-event {
   display: flex;
   gap: 20px;
-  align-items: center;
+  justify-content: space-between;
+  align-items: start;
 }
 
 .cmm-kickoff-event-img {
@@ -112,17 +114,17 @@ section.hero {
   width: calc(50% - 10px);
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  flex-grow: 1;
+  justify-content: space-between;
 }
 
 .cmm-kickoff-event-title {
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.2em;
 }
 
 p.cmm-kickoff-event-date {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   margin-top: 10px;
 }
@@ -131,14 +133,14 @@ p.cmm-kickoff-event-date {
   display: none;
 }
 
-.cmm-kickoff-event button {
-  margin-left: auto;
-  margin-top: auto;
+.cmm-kickoff-event-details button {
+  width: 100%;
+  text-align: right;
 }
 
 .cmm-kickoff-event button a {
   text-decoration: none;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .cmm-kickoff-event button:hover a {
@@ -160,30 +162,30 @@ p.cmm-kickoff-event-date {
   }
 
   .cmm-kickoff .cmm-kickoff-event {
+    align-items: stretch;
     gap: 50px;
   }
 
   .cmm-kickoff-event-img {
-    width: calc(50% - 25px);
+    width: calc(60% - 25px);
   }
 
   .cmm-kickoff-event-details {
-    width: calc(50% - 25px);
+    width: calc(40% - 25px);
   }
 
-  .cmm-kickoff-event-img {
+  .cmm-kickoff-event-img img {
     width: 100%;
     height: auto;
     object-fit: cover;
   }
 
   .cmm-kickoff-event-details {
-    width: 100%;
+    gap: 40px;
   }
 
   .cmm-kickoff-event-title {
     font-size: 24px;
-    font-weight: 500;
   }
 
   p.cmm-kickoff-event-date {
@@ -215,6 +217,7 @@ section.ctv-events {
   border-radius: 10px;
   padding: 15px;
   display: flex;
+  align-items: start;
   gap: 20px;
   min-height: 160px;
 }

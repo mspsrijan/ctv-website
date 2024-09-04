@@ -15,7 +15,7 @@ section.hero {
 }
 
 .hero .section-heading h1 {
-  font-size: 26px;
+  font-size: 28px;
 }
 
 .hero .section-heading h1 span {
@@ -23,13 +23,14 @@ section.hero {
 }
 
 .hero .section-heading h6 {
-  margin-top: 15px;
+  margin-top: 25px;
   font-size: 14px;
 }
 
 .hero .section-subheading h3 {
   font-weight: 700;
   font-size: 20px;
+  text-transform: uppercase;
 }
 
 .hero .section-subheading {
@@ -149,6 +150,7 @@ div.programme-objectives .objectives-banner {
 
 .programme-objectives .objectives-banner h6 {
   text-align: right;
+  text-transform: uppercase;
 }
 
 section.objectives {
@@ -322,6 +324,7 @@ div.pilot-scheme .pilot-scheme-banner {
 
 .pilot-scheme .pilot-scheme-banner h6 {
   text-align: right;
+  text-transform: uppercase;
 }
 
 section.pilot-scheme-item {
@@ -394,6 +397,7 @@ div.dataset-production .dataset-production-banner {
 
 .dataset-production .dataset-production-banner h6 {
   text-align: right;
+  text-transform: uppercase;
 }
 
 section.dataset-production-item {

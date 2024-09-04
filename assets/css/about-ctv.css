@@ -1,5 +1,4 @@
 /** Hero section **/
-
 .hero {
   background-image: url("../img/hero-bg.png");
   background-size: contain;
@@ -19,10 +18,15 @@
   margin-top: 10px;
   margin-bottom: 10px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .hero h1 {
   margin-top: 150px;
+}
+
+.hero .subheading-lg {
+  margin-top: 10px;
 }
 
 .hero-img {
@@ -57,6 +61,10 @@ section.about {
 
 div.about-content {
   width: 100%;
+}
+
+div.about-content > img {
+  margin-bottom: 30px;
 }
 
 div.about-content > div {

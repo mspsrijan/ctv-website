@@ -46,11 +46,11 @@
         <div class="sponsor-wrapper">
           <div class="sponsor-row">
             <div>
-              <p>主辦機構：</p>
+              <p class="sponsor">主辦機構：</p>
               <div class="sponsor-inner-row">
                 <img
                   class="thkpa-logo"
-                  src="../assets/img/the-hong-kong-printers-association-logo.png"
+                  src="../assets/img/thkpa-logo.png"
                   alt="The Hong Kong Printers Association"
                 />
                 <img
@@ -61,18 +61,20 @@
               </div>
             </div>
             <div>
-              <p>執行機構：</p>
-              <img
-                class="aptec-logo"
-                src="../assets/img/aptec-logo.png"
-                alt="APTEC"
-              />
+              <p class="exec-agency">執行機構：</p>
+              <div class="sponsor-inner-row">
+                <img
+                  class="aptec-logo"
+                  src="../assets/img/aptec-logo.png"
+                  alt="APTEC"
+                />
+              </div>
             </div>
           </div>
 
           <div class="sponsor-row">
             <div>
-              <p>贊助機構：</p>
+              <p class="supporting-org">贊助機構：</p>
               <div class="sponsor-inner-row">
                 <img
                   class="ccidahk-logo"
@@ -88,6 +90,7 @@
             </div>
           </div>
         </div>
+
         <button id="open-menu" class="open-btn">
           <i class="fa-solid fa-bars"></i>
         </button>
@@ -160,9 +163,11 @@
       <!-- CMM Kickoff start-->
       <section class="cmm-kickoff">
         <div class="cmm-kickoff-event">
-          <!-- CMM Kickoff Slider -->
           <div class="swiper cmm-kickoff-swiper">
             <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="../assets/img/ctv-pilot-plan.jpg" alt="" />
+              </div>
               <div class="swiper-slide">
                 <video controls>
                   <source
@@ -181,9 +186,6 @@
                   Your browser does not support the video tag.
                 </video>
               </div>
-              <div class="swiper-slide">
-                <img src="https://placehold.co/600x340?text=CTV" alt="" />
-              </div>
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
@@ -191,24 +193,28 @@
           <div class="cmm-kickoff-event-details">
             <div>
               <h4 class="cmm-kickoff-event-title">
-                「色．式．識：灣區出發，盡顯 世界色彩」啟動禮 暨 印刷新質
-                生產力發展論壇
+                CTV先導計劃：鶴山精聯 製作CTV色彩數據庫 - 柯式印刷
               </h4>
               <p class="cmm-kickoff-event-date">
                 Date Here Date Here Date Here
               </p>
-              <p class="cmm-kickoff-event-desc">
-                青配意黃中……雖龍不們得起變統萬出。我品人太臺像笑！
-                呢信天也子，人是會明樣文要理我地張……也了約更中輪果痛引機濟動議嗎定，不感念目在。容應由黃；教區主工兒人仍認那天方世國會地說歡情女汽計電待！用如生成有我人且何念造好、士有中大書故我決大支，其指文容體我重一委會，以人下者，造裝接情子有舉歷日一火技光非歡眼個天時乎件系一中。
-                濟身定，站在中官馬葉真動法同情一實一上與，因好覺了子重當可從他天臺不認，媽到知題道望天部；好氣就，臺們業影雖人思綠低明史在說子獲小專經場構提快出勢期國市性……放子它怕國否木資不友於清……觀你我面舉加熱我？單積在進，登設得也以升本白不，查有持也能就不家眼園天，是入團怕創有大手香數間，物母血著的實，麼如孩前裡。美新和不興過定車，本陽行裡至我，務半往金廣城車行現教。的裡元標親！麼加器上個持康？
-              </p>
             </div>
-            <button>
-              <a
-                href="/kick-off-ceremony-of-colour-method-master-programme-highlights.html"
-                >Know More...</a
-              >
-            </button>
+            <div>
+              <p class="cmm-kickoff-event-desc">
+                首間入選「CTV先導計劃」之印刷商已順利完成培訓
+              </p>
+              <p class="cmm-kickoff-event-desc">
+                由文創產業發展處資助、香港印刷業商會主辦、印刷科技研究中心(APTEC)
+                執行的「色·式·識：灣區出發，盡顯世界色彩」項目，現正展開「CTV先導計劃」。由APTEC為入選先導計劃的鶴山精聯印刷有限公司(鶴山精聯)提供此計劃之第一個CTV
+                培訓已順利完成，包括理論和在印刷機上的實操。...
+              </p>
+              <button>
+                <a
+                  href="/kick-off-ceremony-of-colour-method-master-programme-highlights.html"
+                  >Know More...</a
+                >
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -219,6 +225,9 @@
           <div class="swiper event-swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
+                <img src="../assets/img/ctv-pilot-plan.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
                 <video controls>
                   <source
                     src="../assets/img/sample-video-1.mp4"
@@ -235,9 +244,6 @@
                   />
                   Your browser does not support the video tag.
                 </video>
-              </div>
-              <div class="swiper-slide">
-                <img src="https://placehold.co/320x180?text=CTV" alt="" />
               </div>
             </div>
 
@@ -763,18 +769,38 @@
           </div>
         </div>
       </div>
-      <div class="footer-sponsor">
-        <p>支持機構 :</p>
-        <div>
-          <img src="../assets/img/logo-01.png" alt="" />
-          <img src="../assets/img/logo-02.png" alt="" />
-          <img src="../assets/img/logo-03.png" alt="" />
-          <img src="../assets/img/logo-04.png" alt="" />
-          <img src="../assets/img/logo-05.png" alt="" />
-          <img src="../assets/img/logo-06.png" alt="" />
-          <img src="../assets/img/logo-07.png" alt="" />
-          <img src="../assets/img/logo-08.png" alt="" />
-          <img src="../assets/img/logo-09.png" alt="" />
+      <div class="footer-bottom">
+        <div class="support-org">
+          <h6>支持機構 :</h6>
+          <div>
+            <img src="../assets/img/logo-01.png" alt="" />
+            <img src="../assets/img/logo-02.png" alt="" />
+            <img src="../assets/img/logo-03.png" alt="" />
+            <img src="../assets/img/logo-04.png" alt="" />
+            <img src="../assets/img/logo-05.png" alt="" />
+            <img src="../assets/img/logo-06.png" alt="" />
+            <img src="../assets/img/logo-07.png" alt="" />
+            <img src="../assets/img/logo-08.png" alt="" />
+            <img src="../assets/img/logo-09.png" alt="" />
+          </div>
+        </div>
+        <div class="disclaimer">
+          <h6>Disclaimer:</h6>
+          <p>
+            The Government of the Hong Kong Special Administrative Region
+            provides funding support to the project only, and does not otherwise
+            take part in the project. Any opinions, findings, conclusions or
+            recommendations expressed in these materials/events (or by members
+            of the project team) are those of the project organisers only and do
+            not reflect the views of the Government of the Hong Kong Special
+            Administrative Region, the Culture, Sports and Tourism Bureau, the
+            Cultural and Creative Industries Development Agency, the CreateSmart
+            Initiative Secretariat or the CreateSmart Initiative Vetting
+            Committee.
+          </p>
+          <p>
+            免責聲明：香港特別行政區政府僅為本項目提供資助，除此之外並無參與項目。在本刊物／活動內（或由項目小組成員）表達的任何意見、研究成果、結論或建議，均不代表香港特別行政區政府、文化體育及旅遊局、文創產業發展處、「創意智優計劃」秘書處或「創意智優計劃」審核委員會的觀點。
+          </p>
         </div>
       </div>
     </footer>

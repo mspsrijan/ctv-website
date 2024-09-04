@@ -33,8 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
       ""
     )}`;
   }
-
-  highlightActiveLink();
 });
 
 function switchLanguage(lang) {
@@ -67,13 +65,44 @@ document.addEventListener("click", function (event) {
 // Highlight the active link in the navigation menu
 function highlightActiveLink() {
   const path = window.location.pathname.replace(basePath, "").split("/");
-  const currentPage = path[2] || "index.html"; // Assuming index.html is the default home page
-  const links = document.querySelectorAll(".menu-items a");
+  const currentLang = path[1] || "en"; // Default to 'en' if no language code is found
+
+  const links = document.querySelectorAll(".language-selector a");
 
   links.forEach((link) => {
+    let lang;
+
+    // Check if the link uses the onclick function for language switching
+    if (link.hasAttribute("onclick")) {
+      const onclickValue = link.getAttribute("onclick");
+      lang = onclickValue.match(/switchLanguage\('(\w+)'\)/)?.[1];
+    } else {
+      // Extract the language code from the href attribute
+      lang = link.getAttribute("href").slice(-2);
+    }
+
+    console.log("lang:", lang); // Debug: Check the extracted language code
+
+    // Add or remove the active class based on the current language
+    if (lang === currentLang) {
+      link.classList.add("active");
+    } else {
+      link.classList.remove("active");
+    }
+  });
+
+  // Highlight the active link in the navigation menu
+  const currentPage = path[2] || "index.html"; // Assuming index.html is the default home page
+  const menuLinks = document.querySelectorAll(".menu-items a");
+
+  menuLinks.forEach((link) => {
     const linkPath = link.getAttribute("href").split("/").pop();
     if (linkPath === currentPage) {
       link.classList.add("active");
+    } else {
+      link.classList.remove("active");
     }
   });
 }
+
+document.addEventListener("DOMContentLoaded", highlightActiveLink);

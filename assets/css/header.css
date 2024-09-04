@@ -6,19 +6,21 @@ header .top-bar {
   align-items: center;
 }
 
-header p {
-  font-size: 5px;
-  margin-bottom: 2px;
-}
-
 header .site-logo {
   width: 100px;
+}
+
+header p {
+  font-size: 6px;
+  margin-bottom: 5px;
+  font-weight: 600;
 }
 
 header .sponsor-wrapper {
   display: flex;
   flex-direction: column;
   margin-left: auto;
+  gap: 10px;
 }
 
 header .sponsor-row {
@@ -58,27 +60,22 @@ header .govt-logo {
 }
 
 @media only screen and (min-width: 768px) {
-  header p {
-    font-size: 10px;
-    margin-bottom: 5px;
-  }
-
   header .site-logo {
     width: 190px;
   }
 
+  header p {
+    font-size: 10px;
+  }
+
+  p.sponsor,
+  p.exec-agency {
+    margin-bottom: 12px;
+  }
+
   header .sponsor-wrapper {
     flex-direction: row;
-    gap: 50px;
-  }
-
-  header .sponsor-row {
     gap: 20px;
-  }
-
-  header .sponsor-inner-row {
-    gap: 10px;
-    align-items: center;
   }
 }
 
@@ -87,54 +84,47 @@ header .govt-logo {
     display: none;
   }
 
-  header .sponsor-row {
-    gap: 55px;
+  header p {
+    margin-bottom: 10px;
   }
 
-  header .sponsor-row div {
-    display: flex;
-    gap: 20px;
+  p.sponsor,
+  p.exec-agency {
+    margin-bottom: 30px;
+  }
+
+  header .sponsor-wrapper {
+    gap: 50px;
+  }
+
+  header .sponsor-row {
+    gap: 50px;
   }
 
   header .thkpa-logo {
     width: auto;
-    max-width: 205px;
+    max-width: 230px;
   }
 
   header .years-logo {
     width: auto;
-    max-width: 55px;
+    max-width: 65px;
   }
 
   header .aptec-logo {
     width: auto;
-    max-width: 115px;
+    max-width: 135px;
     height: fit-content;
-    margin-top: 20px;
   }
 
   header .ccidahk-logo {
     width: auto;
-    max-width: 102px;
+    max-width: 115px;
   }
 
   header .govt-logo {
     width: auto;
-    max-width: 315px;
-  }
-}
-
-@media only screen and (min-width: 1024px) and (max-width: 1260px) {
-  header .sponsor-row {
-    gap: 20px;
-  }
-  header .sponsor-row > div {
-    gap: 10px;
-    flex-direction: column !important;
-  }
-
-  header .aptec-logo {
-    margin-top: 0;
+    max-width: 355px;
   }
 }
 
@@ -187,6 +177,7 @@ nav.desktop-nav {
   nav .language-selector {
     justify-content: center;
     gap: 10px;
+    width: 10%;
   }
 
   nav .menu-items a,
@@ -200,20 +191,12 @@ nav.desktop-nav {
   nav .menu-items a:hover,
   nav .menu-items a:active,
   nav .menu-items a:focus,
-  nav .language-selector a:hover {
+  nav .menu-items a.active,
+  nav .language-selector a:hover,
+  nav .language-selector a.active {
     color: #4e4e4e;
     text-decoration: underline;
     text-decoration-thickness: 2px;
-  }
-
-  .menu-items a.active {
-    color: #4e4e4e;
-    text-decoration: underline;
-  }
-
-  nav .language-selector {
-    background-color: #d9d9d9;
-    width: 10%;
   }
 }
 
