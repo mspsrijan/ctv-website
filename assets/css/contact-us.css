@@ -26,12 +26,6 @@ section.hero {
   width: 55%;
 }
 
-.hero .section-subheading h3 {
-  font-weight: 700;
-  font-size: 20px;
-  text-transform: uppercase;
-}
-
 .hero .section-subheading {
   display: flex;
   flex-direction: column;
@@ -39,10 +33,21 @@ section.hero {
   text-align: right;
 }
 
+.hero .section-subheading * {
+  color: #fff;
+}
+
+.hero .section-subheading h3 {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
 .hero .section-subheading h6.subheading-sm,
 .hero .section-subheading p {
   font-size: 13px;
 }
+
 .hero .section-subheading p {
   margin-bottom: unset;
 }
@@ -54,6 +59,7 @@ section.hero {
   .hero .section-heading h6 {
     font-size: 24px;
   }
+
   .hero .section-subheading h3 {
     font-size: 42px;
   }
@@ -76,8 +82,9 @@ section.hero {
   .hero .section-heading h6 {
     font-size: 24px;
   }
+
   .hero .section-subheading h3 {
-    font-size: 48px;
+    font-size: 42px;
   }
 
   .hero .section-subheading h6.subheading-sm,
