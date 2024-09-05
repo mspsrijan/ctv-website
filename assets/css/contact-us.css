@@ -7,27 +7,23 @@ section.hero {
 }
 
 .hero .section-heading {
-  width: calc(45% - 10px);
+  width: 45%;
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
-
-.hero .section-subheading {
-  width: calc(55% - 10px);
+  justify-content: space-between;
 }
 
 .hero .section-heading h1 {
-  font-size: 26px;
-}
-
-.hero .section-heading h1 span {
-  display: none;
+  font-size: 36px;
 }
 
 .hero .section-heading h6 {
-  margin-top: 15px;
   font-size: 14px;
+}
+
+.hero .section-subheading {
+  width: 55%;
 }
 
 .hero .section-subheading h3 {
@@ -43,11 +39,12 @@ section.hero {
   text-align: right;
 }
 
-.hero .section-subheading h6.subheading-sm {
+.hero .section-subheading h6.subheading-sm,
+.hero .section-subheading p {
   font-size: 13px;
 }
 .hero .section-subheading p {
-  font-size: 13px;
+  margin-bottom: unset;
 }
 
 @media only screen and (min-width: 768px) {
@@ -60,9 +57,8 @@ section.hero {
   .hero .section-subheading h3 {
     font-size: 42px;
   }
-  .hero .section-subheading h6.subheading-sm {
-    font-size: 16px;
-  }
+
+  .hero .section-subheading h6.subheading-sm,
   .hero .section-subheading p {
     font-size: 16px;
   }
@@ -77,26 +73,21 @@ section.hero {
     font-size: 72px;
   }
 
-  .hero .section-heading h1 span {
-    display: inline-block;
-  }
-
   .hero .section-heading h6 {
     font-size: 24px;
   }
   .hero .section-subheading h3 {
     font-size: 48px;
   }
-  .hero .section-subheading h6.subheading-sm {
-    font-size: 18px;
-  }
+
+  .hero .section-subheading h6.subheading-sm,
   .hero .section-subheading p {
     font-size: 18px;
   }
 }
 
-/** Contact Details **/
-section.contact-details {
+/** Contact **/
+section.contact {
   background-color: #fff;
   margin: 0px 15px 25px 15px;
   padding: 15px;
@@ -113,7 +104,7 @@ div.contact-details {
 div.contact-details h6 {
   font-size: 18px;
   font-weight: 600;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .contact-row {
@@ -123,12 +114,8 @@ div.contact-details h6 {
   justify-content: space-between;
 }
 
-div.email a:hover {
-  text-decoration: underline;
-}
-
 @media only screen and (min-width: 768px) {
-  section.contact-details {
+  section.contact {
     margin: 0 30px 30px 30px;
     padding: 20px;
     border-radius: 20px;
@@ -136,7 +123,7 @@ div.email a:hover {
   }
 }
 @media only screen and (min-width: 1024px) {
-  section.contact-details {
+  section.contact {
     margin: 0 50px 50px 50px;
     padding: 30px;
     gap: 30px;

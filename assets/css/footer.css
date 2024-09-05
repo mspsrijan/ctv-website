@@ -88,15 +88,25 @@ footer .language-selector a {
   font-size: 14px;
 }
 
+.footer-bottom .support-org {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
 .footer-bottom .support-org div {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
   gap: 25px;
 }
 
-.footer-bottom .support-org div img {
+.footer-bottom .support-org div.first-row img {
+  max-width: calc(100% / 4 - 25px);
+  height: auto;
+}
+
+.footer-bottom .support-org div.second-row img {
   max-width: calc(100% / 5 - 25px);
   height: auto;
 }
@@ -161,7 +171,11 @@ footer .language-selector a {
     gap: 40px;
   }
 
-  .footer-bottom .support-org div img {
+  .footer-bottom .support-org div.first-row img {
+    max-width: calc(100% / 4 - 40px);
+  }
+
+  .footer-bottom .support-org div.second-row img {
     max-width: calc(100% / 5 - 40px);
   }
 }

@@ -81,8 +81,6 @@ function highlightActiveLink() {
       lang = link.getAttribute("href").slice(-2);
     }
 
-    console.log("lang:", lang); // Debug: Check the extracted language code
-
     // Add or remove the active class based on the current language
     if (lang === currentLang) {
       link.classList.add("active");
