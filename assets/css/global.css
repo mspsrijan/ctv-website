@@ -93,6 +93,10 @@ em {
   line-height: 1.2em;
 }
 
+.white-text {
+  color: #fff;
+}
+
 img {
   width: 100%;
 }
