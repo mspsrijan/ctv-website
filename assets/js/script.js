@@ -18,10 +18,10 @@ document.getElementById("menu-overlay").addEventListener("click", function () {
 // Language switcher
 
 // Basepath for Github subdirectory
-const basePath = "/ctv-website";
+// const basePath = "/ctv-website";
 
 // Basepath for localhost
-// const basePath = "";
+const basePath = "";
 
 document.addEventListener("DOMContentLoaded", function () {
   const path = window.location.pathname.replace(basePath, "").split("/");

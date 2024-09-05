@@ -2,13 +2,13 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   color: #4e4e4e;
 }
 
 body {
-  padding: 30px 8px 10px 8px;
+  padding: 30px 10px 10px 10px;
   width: 100%;
-  box-sizing: border-box;
   margin: auto;
   font-family: "Montserrat", sans-serif;
 }
@@ -101,12 +101,15 @@ button {
   all: unset;
 }
 
+button a,
 a {
   text-decoration: none;
 }
 
-.white-text {
-  color: #fff;
+button:hover a,
+a:hover,
+a.active {
+  text-decoration: underline;
 }
 
 @media only screen and (min-width: 768px) {
