@@ -1,4 +1,4 @@
-var swiper = new Swiper(".cmm-kickoff-swiper", {
+var swiper = new Swiper(".featured-event-swiper", {
   loop: true,
 
   navigation: {

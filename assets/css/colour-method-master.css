@@ -7,11 +7,15 @@ section.hero {
 }
 
 .hero .section-heading {
-  width: calc(45% - 10px);
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
 }
 
 .hero .section-subheading {
-  width: calc(55% - 10px);
+  width: 55%;
 }
 
 .hero .section-heading h1 {
@@ -23,13 +27,12 @@ section.hero {
 }
 
 .hero .section-heading h6 {
-  margin-top: 25px;
   font-size: 14px;
 }
 
 .hero .section-subheading h3 {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 12px;
   text-transform: uppercase;
 }
 
@@ -40,11 +43,23 @@ section.hero {
   text-align: right;
 }
 
-.hero .section-subheading h6.subheading-sm {
-  font-size: 13px;
+.hero .section-subheading * {
+  color: #fff;
 }
+
+.hero .section-subheading h3 {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.hero .section-subheading h6.subheading-sm,
 .hero .section-subheading p {
-  font-size: 13px;
+  font-size: 12px;
+}
+
+.hero .section-subheading p {
+  margin-bottom: unset;
 }
 
 .hero-img {
@@ -64,18 +79,22 @@ section.hero {
   .hero .section-heading h6 {
     font-size: 24px;
   }
+
   .hero .section-subheading h3 {
     font-size: 42px;
   }
-  .hero .section-subheading h6.subheading-sm {
-    font-size: 16px;
-  }
+
+  .hero .section-subheading h6.subheading-sm,
   .hero .section-subheading p {
     font-size: 16px;
   }
 }
 
 @media only screen and (min-width: 1024px) {
+  .hero .section-heading {
+    gap: 20px;
+  }
+
   .hero .section-heading h1 {
     font-size: 72px;
   }
@@ -84,17 +103,20 @@ section.hero {
     display: inline-block;
   }
 
+  .hero .section-heading {
+    gap: 20px;
+  }
+
+  .hero .section-heading h1 {
+    font-size: 72px;
+  }
+
   .hero .section-heading h6 {
     font-size: 24px;
   }
+
   .hero .section-subheading h3 {
-    font-size: 48px;
-  }
-  .hero .section-subheading h6.subheading-sm {
-    font-size: 18px;
-  }
-  .hero .section-subheading p {
-    font-size: 18px;
+    font-size: 42px;
   }
 
   .hero-img img {
@@ -128,7 +150,7 @@ div.about-content {
 }
 
 /** Programme Objectives **/
-div.programme-objectives .objectives-banner {
+div.objectives .banner {
   height: 200px;
   background: url("../img/programme-objectives-bg.jpg") rgba(0, 0, 0, 0.2);
   background-blend-mode: multiply;
@@ -137,33 +159,29 @@ div.programme-objectives .objectives-banner {
   background-repeat: no-repeat;
 }
 
-.programme-objectives .objectives-banner {
+.objectives .banner {
   display: flex;
   justify-content: space-between;
   gap: 20px;
 }
 
-.programme-objectives .objectives-banner * {
+.objectives .banner * {
   color: #fff;
   font-weight: 700;
 }
 
-.programme-objectives .objectives-banner h6 {
+.objectives .banner h6 {
   text-align: right;
   text-transform: uppercase;
 }
 
-section.objectives {
+section.objectives-content {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-div.objectives {
-  width: 100%;
-}
-
-.objectives-list {
+.objectives-list ul {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -178,33 +196,33 @@ div.objectives {
 }
 
 @media only screen and (min-width: 768px) {
-  div.programme-objectives .objectives-banner {
+  div.objectives .banner {
     height: 250px;
   }
 }
 @media only screen and (min-width: 1024px) {
-  div.programme-objectives .objectives-banner {
+  div.objectives .banner {
     height: 300px;
   }
 
-  .programme-objectives .objectives-banner h3 {
+  .objectives .banner h3 {
     font-size: 72px;
   }
 
-  .programme-objectives .objectives-banner h6 {
+  .objectives .banner h6 {
     font-size: 42px;
   }
 
-  section.objectives {
+  section.objectives-content {
     flex-direction: row;
   }
 
   div.objectives-heading {
-    width: calc(45% - 10px);
+    width: 45%;
   }
 
-  div.objectives-content {
-    width: calc(55% - 10px);
+  div.objectives-list {
+    width: 55%;
   }
 }
 
@@ -222,12 +240,12 @@ div.objectives {
 }
 
 .organisations .heading h3 {
-  width: calc(50% - 10px);
+  width: 50%;
   font-size: 26px;
 }
 
 .organisations .heading h5 {
-  width: calc(45% - 10px);
+  width: 45%;
   text-align: right;
   font-weight: 300;
   text-transform: uppercase;
@@ -259,6 +277,10 @@ div.objectives {
   gap: 25px;
 }
 
+.organisations .org-item .org-details p:last-child {
+  margin-bottom: 0;
+}
+
 @media only screen and (min-width: 768px) {
   .organisations .heading h3 {
     font-size: 42px;
@@ -284,12 +306,8 @@ div.objectives {
     font-size: 28px;
   }
 
-  .organisations .org-item {
-    flex-direction: row;
-  }
-
   .organisations .org-item .org-img {
-    width: calc(40% - 25px);
+    width: 40%;
   }
 
   .organisations .org-item .org-img img {
@@ -297,12 +315,13 @@ div.objectives {
   }
 
   .organisations .org-item .org-details {
-    width: calc(60% - 25px);
+    width: 60%;
   }
 }
 
 /** CTV Pilot Sceme **/
-div.pilot-scheme .pilot-scheme-banner {
+div.pilot-scheme .banner {
+  margin-top: 50px;
   height: 200px;
   background: url("../img/programme-objectives-bg.jpg") rgba(0, 0, 0, 0.2);
   background-blend-mode: multiply;
@@ -311,30 +330,31 @@ div.pilot-scheme .pilot-scheme-banner {
   background-repeat: no-repeat;
 }
 
-.pilot-scheme .pilot-scheme-banner {
+.pilot-scheme .banner {
   display: flex;
   justify-content: space-between;
   gap: 20px;
 }
 
-.pilot-scheme .pilot-scheme-banner * {
+.pilot-scheme .banner * {
   color: #fff;
   font-weight: 700;
 }
 
-.pilot-scheme .pilot-scheme-banner h6 {
+.pilot-scheme .banner h6 {
   text-align: right;
   text-transform: uppercase;
 }
 
-section.pilot-scheme-item {
+section.pilot-scheme-content,
+section.pilot-scheme-companies {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-div.pilot-scheme-item {
-  width: 100%;
+section.pilot-scheme-companies {
+  padding-top: 0;
 }
 
 .pilot-scheme-list {
@@ -344,38 +364,39 @@ div.pilot-scheme-item {
 }
 
 @media only screen and (min-width: 768px) {
-  div.pilot-scheme .pilot-scheme-banner {
+  div.pilot-scheme .banner {
     height: 250px;
   }
 }
 @media only screen and (min-width: 1024px) {
-  div.pilot-scheme .pilot-scheme-banner {
+  div.pilot-scheme .banner {
     height: 300px;
   }
 
-  .pilot-scheme .pilot-scheme-banner h3 {
+  .pilot-scheme .banner h3 {
     font-size: 72px;
   }
 
-  .pilot-scheme .pilot-scheme-banner h6 {
+  .pilot-scheme .banner h6 {
     font-size: 42px;
   }
 
-  section.pilot-scheme-item {
+  section.pilot-scheme-content,
+  section.pilot-scheme-companies {
     flex-direction: row;
   }
 
   div.pilot-scheme-heading {
-    width: calc(45% - 10px);
+    width: 45%;
   }
 
-  div.pilot-scheme-content {
-    width: calc(55% - 10px);
+  div.pilot-scheme-details {
+    width: 55%;
   }
 }
 
 /** Dataset Poduction **/
-div.dataset-production .dataset-production-banner {
+div.dataset-production .banner {
   height: 200px;
   background: url("../img/dataset-production-bg.jpg") rgba(0, 0, 0, 0.2);
   background-blend-mode: multiply;
@@ -384,29 +405,36 @@ div.dataset-production .dataset-production-banner {
   background-repeat: no-repeat;
 }
 
-.dataset-production .dataset-production-banner {
+.dataset-production .banner {
   display: flex;
   justify-content: space-between;
   gap: 20px;
 }
 
-.dataset-production .dataset-production-banner * {
+.dataset-production .banner * {
   color: #fff;
   font-weight: 700;
 }
 
-.dataset-production .dataset-production-banner h6 {
+.dataset-production .banner h6 {
   text-align: right;
   text-transform: uppercase;
 }
 
-section.dataset-production-item {
+section.dataset-production-content,
+section.dataset-production-companies {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-div.dataset-production-item {
+section.dataset-production-companies {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+div.dataset-production-content,
+section.dataset-production-companies {
   width: 100%;
 }
 
@@ -416,50 +444,59 @@ div.dataset-production-item {
   gap: 5px;
 }
 
-div.dataset-production-heading img {
-  display: none;
-}
-
-.mobile-footer-logo {
-  width: 160px;
-  margin: 20px 0;
-}
-
 @media only screen and (min-width: 768px) {
-  div.dataset-production .dataset-production-banner {
+  div.dataset-production .banner {
     height: 250px;
   }
 }
 @media only screen and (min-width: 1024px) {
-  div.dataset-production .dataset-production-banner {
-    height: 300px;
+  div.dataset-production .banner {
+    height: 350px;
   }
 
-  .dataset-production .dataset-production-banner h3 {
+  .dataset-production .banner h3 {
     font-size: 72px;
   }
 
-  .dataset-production .dataset-production-banner h6 {
+  .dataset-production .banner h6 {
     font-size: 42px;
   }
 
-  section.dataset-production-item {
+  section.dataset-production-content,
+  section.dataset-production-companies {
     flex-direction: row;
   }
 
   div.dataset-production-heading {
-    width: calc(45% - 10px);
+    width: 45%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
 
-  div.dataset-production-heading img {
-    display: block;
-    width: 220px;
+  div.dataset-production-details {
+    width: 55%;
+  }
+}
+
+/** Page footer **/
+.page-footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.page-footer img {
+  width: 160px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .page-footer {
+    padding-top: 0;
+    padding-bottom: 20px;
   }
 
-  div.dataset-production-content {
-    width: calc(55% - 10px);
+  .page-footer img {
+    width: 220px;
+    margin-top: -220px;
   }
 }

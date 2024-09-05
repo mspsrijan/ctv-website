@@ -14,18 +14,22 @@
   font-size: 16px;
 }
 
-.hero h3 {
+.hero .subheading * {
+  color: #fff;
+}
+
+.hero .subheading h3 {
   margin-top: 10px;
   margin-bottom: 10px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.hero h1 {
+.hero .heading h1 {
   margin-top: 150px;
 }
 
-.hero .subheading-lg {
+.hero .heading h6 {
   margin-top: 10px;
 }
 
@@ -131,6 +135,10 @@ div.about-content hr {
 }
 
 /** Benefits section**/
+section.benefits {
+  padding-bottom: 0;
+}
+
 .benefits .heading {
   display: flex;
   gap: 20px;
@@ -151,18 +159,8 @@ div.about-content hr {
   gap: 50px;
 }
 
-.benefits-list div h5 {
+.benefits-list h5 {
   display: none;
-}
-
-.benefits-list div {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.benefits-list img {
-  width: 160px;
 }
 
 .benefits-list ul {
@@ -177,11 +175,29 @@ div.about-content hr {
     flex-direction: row;
   }
 
-  .benefits-list div h5 {
+  .benefits-list h5 {
     display: block;
   }
+}
 
-  .benefits-list img {
+/** Page footer **/
+.page-footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.page-footer img {
+  width: 160px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .page-footer {
+    padding-top: 0;
+    padding-bottom: 20px;
+  }
+
+  .page-footer img {
     width: 220px;
+    margin-top: -220px;
   }
 }

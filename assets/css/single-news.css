@@ -1,54 +1,68 @@
 /** Hero **/
-.hero .cmm-kickoff-event-date {
+.hero .news-date {
   font-size: 14px;
   font-weight: 600;
 }
 
-.hero .cmm-kickoff-event-title {
+.hero .news-title {
   line-height: 1.1em;
+  font-weight: 500;
 }
 
 @media only screen and (min-width: 1024px) {
-  .hero .cmm-kickoff-event-date {
+  .hero .news-date {
     font-size: 15px;
   }
 }
 
-/** CMM Kickoff Event **/
-.cmm-kickoff {
+/** News **/
+.news {
   background-color: #fff;
   margin: 0px 15px 25px 15px;
   padding: 15px;
   border-radius: 10px;
 }
 
-.cmm-kickoff-event-img {
-  min-height: 180px;
+.news .featured-image {
+  max-height: 500px;
   object-fit: cover;
 }
 
-.cmm-kickoff-event-details {
+.news-details {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
+.news-details p {
+  margin-bottom: 0;
+}
+
+.news-details li:not(:last-child) {
+  padding-bottom: 15px;
+}
+
+.news-details a {
+  text-decoration: underline;
+}
+
 @media only screen and (min-width: 768px) {
-  .cmm-kickoff {
+  .news {
     margin: 0 30px 30px 30px;
     padding: 20px;
     border-radius: 20px;
     gap: 30px;
   }
 }
+
 @media only screen and (min-width: 1024px) {
-  .cmm-kickoff {
+  .news {
     margin: 0 50px 50px 50px;
     padding: 30px;
   }
 
-  .cmm-kickoff-event-details {
+  .news-details {
     width: 60%;
     margin-top: 50px;
     margin-left: auto;
