@@ -53,12 +53,13 @@ section.hero {
   text-transform: uppercase;
 }
 
-.hero .section-subheading h6.subheading-sm,
-.hero .section-subheading p {
+.hero .section-subheading h6.subheading-sm {
   font-size: 12px;
 }
 
 .hero .section-subheading p {
+  font-size: 15px;
+  font-weight: 500;
   margin-bottom: unset;
 }
 
@@ -84,9 +85,12 @@ section.hero {
     font-size: 42px;
   }
 
-  .hero .section-subheading h6.subheading-sm,
-  .hero .section-subheading p {
+  .hero .section-subheading h6.subheading-sm {
     font-size: 16px;
+  }
+
+  .hero .section-subheading p {
+    font-size: 20px;
   }
 }
 

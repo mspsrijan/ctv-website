@@ -96,19 +96,54 @@ footer .language-selector a {
 
 .footer-bottom .support-org div {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 25px;
 }
 
-.footer-bottom .support-org div.first-row img {
-  max-width: calc(100% / 4 - 25px);
-  height: auto;
+.footer-bottom .support-org .logo-01 {
+  min-width: 35px;
+  max-width: 103px;
 }
 
-.footer-bottom .support-org div.second-row img {
-  max-width: calc(100% / 5 - 25px);
-  height: auto;
+.footer-bottom .support-org .logo-02 {
+  min-width: 35px;
+  max-width: 105px;
+}
+
+.footer-bottom .support-org .logo-03 {
+  min-width: 87px;
+  max-width: 260px;
+}
+
+.footer-bottom .support-org .logo-04 {
+  min-width: 53px;
+  max-width: 160px;
+}
+
+.footer-bottom .support-org .logo-05 {
+  min-width: 77px;
+  max-width: 230px;
+}
+
+.footer-bottom .support-org .logo-06 {
+  min-width: 50px;
+  max-width: 148px;
+}
+
+.footer-bottom .support-org .logo-07 {
+  min-width: 26px;
+  max-width: 76px;
+}
+
+.footer-bottom .support-org .logo-08 {
+  min-width: 60px;
+  max-width: 180px;
+}
+
+.footer-bottom .support-org .logo-09 {
+  min-width: 44px;
+  max-width: 132px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -169,13 +204,5 @@ footer .language-selector a {
 
   .footer-bottom .support-org div {
     gap: 40px;
-  }
-
-  .footer-bottom .support-org div.first-row img {
-    max-width: calc(100% / 4 - 40px);
-  }
-
-  .footer-bottom .support-org div.second-row img {
-    max-width: calc(100% / 5 - 40px);
   }
 }
